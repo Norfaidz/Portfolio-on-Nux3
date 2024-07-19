@@ -1,0 +1,162 @@
+.index-container{
+    height: 483px;
+    width: 100%;
+    position: relative;
+    background-color: #272343;
+}
+.image-container{
+    left: 100px;
+    top: 25px;
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+    border: #ffd803 2px solid;
+    background-image: url("C:\Users\Norfaidz M. Ibrahim\Desktop\OJT\Nuxt Portfolio\Portfolio-Nux-Project\assets\images\image-container.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-container{
+    top: 50px;
+    right: 200px;
+    position: absolute;
+    height: 400px;
+    width: 440px;
+    background-color: #272343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f3fbfb;
+    border-radius: 20px;
+}
+.light{
+    font-weight: lighter;
+}
+.bold{
+    font-weight: bolder;
+    color: #ffd803;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 50px;
+    margin: 0px;
+}
+h3{
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+/* button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: #bae8e8;
+    font-size: 15px;
+    font-weight: bold;
+    color: #272343;
+}
+button::before {
+    color: #272343;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffd803;
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+button:hover::before {
+    left: 0;
+    color: #272343;
+} */
+.btnhire{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.buttonhire {
+    --offset: 10px;
+    --border-size: 2px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #ffd803;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    transition: background .8s ease;
+  }
+  
+  .buttonhire:hover {
+    background: rgba(100, 0, 0, .03);
+  }
+  
+  .buttonhire__horizontal,
+  .buttonhire__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform .8s ease;
+    will-change: transform;
+  }
+  
+  .buttonhire__horizontal::before,
+  .buttonhire__vertical::before {
+    content: '';
+    position: absolute;
+    border: inherit;
+  }
+  
+  .buttonhire__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+  }
+  
+  .buttonhire__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+  }
+  
+  .buttonhire:hover .buttonhire__horizontal {
+    transform: scaleX(0);
+  }
+  
+  .buttonhire__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+  }
+  
+  .buttonhire__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+  }
+  
+  .buttonhire:hover .buttonhire__vertical {
+    transform: scaleY(0);
+  }
+
+  

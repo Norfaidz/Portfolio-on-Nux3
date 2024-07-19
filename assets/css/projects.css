@@ -1,0 +1,21 @@
+.projectcontainer{
+    height: 481px;
+    width: 100%;
+    background-color: #272343;
+    position: relative;
+    color: #f3fbfb;
+}
+.titleproj{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.projectscards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}

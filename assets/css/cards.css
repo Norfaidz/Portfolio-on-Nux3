@@ -1,0 +1,96 @@
+/* .project-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  .project-container img{
+    height: 150px;
+    width: 150px;
+  }
+  .detail-container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: #190019;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    width: 250px;
+    height: 300px;
+  }
+  .color-container {
+    background-color: #bae8e8;
+  }
+  .project-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  .project-title {
+    margin: 1rem;
+    color: black;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 25px;
+  }
+.project-btn {
+    background-color: #ffd803;
+    color: #272343;
+  }
+.project-btn:hover,
+.project-btn:focus{
+    box-shadow: 3px 3px 3px #ffd803;
+    transform: translateY(-0.25em);
+} */
+figure {
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+figure > * {
+  grid-area: 1/1;
+  transition: .4s;
+}
+figure figcaption {
+  display: grid;
+  align-items: end;
+  font-family: sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #0000;
+  padding: .75rem;
+  background: var(--c,#0009);
+  clip-path: inset(0 var(--_i,100%) 0 0);
+  -webkit-mask:
+    linear-gradient(#000 0 0),
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  -webkit-mask-clip: text, padding-box;
+  margin: -1px;
+}
+figure:hover figcaption{
+  --_i: 0%;
+}
+figure:hover img {
+  transform: scale(1.2);
+}
+@supports not (-webkit-mask-clip: text) {
+  figure figcaption {
+   -webkit-mask: none;
+   color: #fff;
+  }
+}
